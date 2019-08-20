@@ -1,14 +1,24 @@
 {
   "name": "repeat",
   "version": "1.0.0",
+  "homepage": "https://luke01455.github.io/repeat-mobile",
   "description": "Landed by HTML5 UP\r html5up.net | @ajlkn\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
-  "main": "./js/main.js",
+  "main": "./assets/js/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode: development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^2.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
   }
 }
