@@ -3545,7 +3545,28 @@ input, select, textarea {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		width: 100%;
-		grid-gap: 10px 20px;
+		grid-gap: 10px 30px;
+	}
+	#buttons-container .img-cont {
+		height: 55px;
+	}
+
+	#buttons-container .imgbtn {
+		width: 30px;
+		height: auto;
+		transition: 0.3s;
+	}
+	#buttons-container .imgbtn:hover {
+		width: 34px;
+		height: auto;
+	}
+
+	#buttons-container .content p {
+		transition: 0.3s;
+	}
+
+	#buttons-container .content p:hover {
+		letter-spacing: 1px;
 	}
 
 /* Footer */
@@ -3867,7 +3888,7 @@ input, select, textarea {
 				}
 
 					#banner .content header h2 {
-						font-size: 1.5em;
+						font-size: 2em;
 					}
 
 					#banner .content .image {
