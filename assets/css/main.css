@@ -1626,36 +1626,6 @@ input, select, textarea {
 					margin-left: -3.75em;
 				}
 
-					.row.gtr-150 > * {
-						padding: 0 0 0 3.75em;
-					}
-
-					.row.gtr-150.gtr-uniform {
-						margin-top: -3.75em;
-					}
-
-						.row.gtr-150.gtr-uniform > * {
-							padding-top: 3.75em;
-						}
-
-				.row.gtr-200 {
-					margin-top: 0;
-					margin-left: -5em;
-				}
-
-					.row.gtr-200 > * {
-						padding: 0 0 0 5em;
-					}
-
-					.row.gtr-200.gtr-uniform {
-						margin-top: -5em;
-					}
-
-						.row.gtr-200.gtr-uniform > * {
-							padding-top: 5em;
-						}
-
-		}
 
 		@media screen and (max-width: 736px) {
 
@@ -3495,6 +3465,7 @@ input, select, textarea {
 		}
 
 		#banner .content {
+			margin-top: 50px;
 			display: inline-block;
 			margin-right: 1%;
 			max-width: 95%;
@@ -3539,6 +3510,76 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 
+	#buttons-container .content {
+		margin-top: -8px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 100%;
+		grid-gap: 10px 30px;
+	}
+	#buttons-container .img-cont {
+		height: 55px;
+	}
+
+	#buttons-container .imgbtn {
+		width: 30px;
+		height: auto;
+		transition: 0.3s;
+	}
+	#buttons-container .imgbtn:hover {
+		width: 34px;
+		height: auto;
+	}
+
+	#buttons-container .content p {
+		transition: 0.3s;
+	}
+
+	#buttons-container .content p:hover {
+		letter-spacing: 1px;
+	}
+
+	.slidecontainer {
+		width: 100%; /* Width of the outside container */
+		padding: 10px 0px 20px 0px;
+	  }
+	  
+	  /* The slider itself */
+	  .slider {	
+		-webkit-appearance: none;  /* Override default CSS styles */
+		appearance: none;
+		width: 80%; /* Full-width */
+		height: 12px; /* Specified height */
+		background: #d3d3d3; /* Grey background */
+		outline: none; /* Remove outline */
+		opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+		-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+		transition: opacity .2s;
+		border-radius: 3px;
+	  }
+	  
+	  /* Mouse-over effects */
+	  .slider:hover {
+		opacity: 1; /* Fully shown on mouse-over */
+	  }
+	  
+	  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+	  .slider::-webkit-slider-thumb {
+		-webkit-appearance: none; /* Override default look */
+		appearance: none;
+		width: 22px; /* Set a specific slider handle width */
+		height: 22px; /* Slider handle height */
+		background: #c44c65; /* Green background */
+		cursor: pointer; /* Cursor on hover */
+		border-radius: 6px;
+	  }
+	  
+	  .slider::-moz-range-thumb {
+		width: 22px; /* Set a specific slider handle width */
+		height: 22px; /* Slider handle height */
+		background: #c44c65; /* Green background */
+		cursor: pointer; /* Cursor on hover */
+	  }
 /* Footer */
 
 	#footer {
@@ -3858,7 +3899,7 @@ input, select, textarea {
 				}
 
 					#banner .content header h2 {
-						font-size: 1.5em;
+						font-size: 2em;
 					}
 
 					#banner .content .image {
